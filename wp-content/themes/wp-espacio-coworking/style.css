@@ -1,0 +1,16 @@
+/*
+Theme Name: Espacio Coworking
+Theme URI: https://espaciocoworking.com.ar
+Author: Rodrigo Colella
+Author URI: https://espaciocoworking.com.ar
+Description: Tema headless para espacio coworking.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: mi-tema-basico
+*/
+
+/* Aquí van tus estilos */
+body {
+    font-family: Arial, sans-serif;
+}
