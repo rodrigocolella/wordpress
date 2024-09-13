@@ -1,11 +1,22 @@
 // src/App.js
 import React from 'react';
-import Posts from './Posts'; // Importar el componente Posts
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import Posts from './pages/Posts';
 
 function App() {
   return (
     <div className="App">
-      <Posts /> {/* Usar el componente Posts */}
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/pages/Posts" element={<Posts />} />
+        </Routes>
+      </main>
+      <Footer />
     </div>
   );
 }

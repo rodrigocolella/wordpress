@@ -10,7 +10,6 @@ const OBTENER_PUBLICACIONES = gql`
         id
         title
         content
-        date
       }
     }
   }
@@ -30,7 +29,6 @@ function Posts() {
           <li key={post.id}>
             <h2>{post.title}</h2>
             <div dangerouslySetInnerHTML={{ __html: post.content }} />
-            <p>{post.date}</p>
           </li>
         ))}
       </ul>
